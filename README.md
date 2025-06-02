@@ -57,7 +57,7 @@ You can use:
 
 ## 🔍 Example Queries
 
-**Search Term:** `времето в софия`  
+**Search Term:** `дума`  
 **Filtered Query:**  
 ```text
-времето в софия -lang:ru -site:ru -site:*.ru -site:*.su -site:*.рф -site:*.yandex.* ...
+дума -lang:ru -site:ru -site:*.ru -site:*.su -site:*.рф -site:*.yandex.* ...
