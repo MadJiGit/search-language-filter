@@ -4,15 +4,9 @@
 
 You can also add your own filters for any domain or language you wish to block.
 
-👉 **[Install on Chrome](https://chromewebstore.google.com/detail/search-language-filter/jhaaififdgohacmbigmellnhiihiidee)** 
-👉 **[Install on Firefox](https://addons.mozilla.org/en-US/firefox/addon/search-language-filter/)**
+[<img src="https://www.google.com/chrome/static/images/chrome-logo.svg" width="20"/> Install on Chrome](https://chromewebstore.google.com/detail/search-language-filter/jhaaififdgohacmbigmellnhiihiidee)
 
-<a href="https://chromewebstore.google.com/detail/search-language-filter/jhaaififdgohacmbigmellnhiihiidee">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" alt="Chrome" width="20"/> Install on Chrome
-</a>  
-<a href="https://addons.mozilla.org/en-US/firefox/addon/search-language-filter/">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Mozilla_Firefox_3.5_logo_256.png" alt="Firefox" width="20"/> Install on Firefox
-</a>
+[<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Firefox_Logo,_2019.png" width="20"/> Install on Firefox](https://addons.mozilla.org/en-US/firefox/addon/search-language-filter/)
 
 ---
 
