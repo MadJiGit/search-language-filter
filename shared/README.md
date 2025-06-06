@@ -37,10 +37,9 @@ To improve the quality and relevance of search results, the extension automatica
 - ✅ Local storage only (no data collected or shared)
 - ✅ Works in Chrome, Edge, Firefox*
 - ✅ Add your own domain or language filters to customize results
+- ✅ Visual feedback when adding filters (e.g. “Filter added” / “Already exists”)
 
 ℹ️ By default, the extension loads a set of pre-defined filters (mostly Russian-language sites), which you can fully customize or remove.
-
-> *Note: Firefox requires temporary extension loading via `about:debugging`*
 
 ---
 
@@ -62,6 +61,10 @@ You can use:
 - Exact domains
 - Wildcards (e.g. `*.ru`, `*.mail.ru`)
 - Path-based rules (e.g. URLs containing `lang=ru`)
+
+### 🔄 What happens when all filters are removed?
+
+If you remove all entries from your blacklist, the extension will automatically restore the default filters on your next search — ensuring you're always protected against unwanted results.
 
 ---
 

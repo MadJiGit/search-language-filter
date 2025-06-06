@@ -126,10 +126,18 @@ document.addEventListener("DOMContentLoaded", () => {
         chrome.storage.local.set({ customBlacklist: existing }, () => {
           customInput.value = "";
           renderCustomList();
-          alert(`Added: ${rawValue}`);
+          const toast = document.getElementById("toast");
+          toast.textContent = `Added: ${rawValue}`;
+          setTimeout(() => (toast.textContent = ""), 2000);
         });
       } else {
-        alert("This filter is already added.");
+        const toast = document.getElementById("toast");
+        toast.textContent = "This filter is already added.";
+        toast.style.color = "red";
+        setTimeout(() => {
+          toast.textContent = "";
+          toast.style.color = "green";
+        }, 2000);
       }
     });
   });

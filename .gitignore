@@ -14,5 +14,5 @@ chrome_build.sh
 firefox_build.sh
 
 # Build artifacts
-search_language_filter.xpi
+firefox_pack_extension.xpi
 chrome_pack/
