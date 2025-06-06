@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "TEST Search Language Filter",
+  "version": "1.1",
+  "description": "Browser extension, that filters Google, Firefox and Bing search results by excluding Russian language and domains.",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/*",
+        "*://*.bing.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "type": "module"
+    }
+  ],
+  "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "filtersearch@yourdomain.org",
+      "strict_min_version": "57.0"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

@@ -1,4 +1,18 @@
 # macOS system files
-.DS_Store
+*.DS_Store
+
+# Git and node-related files/folders
+*.git*
+*node_modules*
+
+# JetBrains IDE config
 .idea
 
+# Build scripts and outputs
+.make_xpi.sh
+chrome_build.sh
+firefox_build.sh
+
+# Build artifacts
+search_language_filter.xpi
+chrome_pack/
