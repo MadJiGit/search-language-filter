@@ -8,6 +8,7 @@ You can also add your own filters for any domain or language you wish to block.
 [<img src="https://www.google.com/chrome/static/images/chrome-logo.svg" width="20"/> Install on Chrome](https://chromewebstore.google.com/detail/search-language-filter/jhaaififdgohacmbigmellnhiihiidee)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Firefox_Logo,_2019.png" width="20"/> Install on Firefox](https://addons.mozilla.org/en-US/firefox/addon/search-language-filter/)
 
+Available for desktop and Android versions of **Chrome** and **Firefox**.
 ---
 
 ## 🧭 Why This Extension Was Created
@@ -36,6 +37,8 @@ To improve the quality and relevance of search results, the extension automatica
 - ✅ Local storage only (no data collected or shared)
 - ✅ Works in Chrome, Edge, Firefox*
 - ✅ Add your own domain or language filters to customize results
+
+ℹ️ By default, the extension loads a set of pre-defined filters (mostly Russian-language sites), which you can fully customize or remove.
 
 > *Note: Firefox requires temporary extension loading via `about:debugging`*
 
