@@ -1,3 +1,4 @@
+// Firefox
 const defaultFilters = [
   '-lang:ru',
   '-site:ru',
@@ -10,6 +11,8 @@ const defaultFilters = [
   '-site:*.ok.ru',
   '-site:gufo.me',
   '-site:redboxsoft.com',
+  '-site:stackexchange.com',
+  '-site:russkiypro.com',
   '-site:ru.wiktionary.org',
   '-site:*.wikipedia.org/*hl=ru*',
   '-site:*.wikipedia.org/*lang=ru*'

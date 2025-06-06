@@ -1,4 +1,4 @@
-// Chrome
+// Safari
 const defaultFilters = [
   '-lang:ru',
   '-site:ru',

@@ -1,3 +1,4 @@
+// Firefox
 const defaultFilters = [
   '-lang:ru',
   '-site:ru',
@@ -10,6 +11,8 @@ const defaultFilters = [
   '-site:*.ok.ru',
   '-site:gufo.me',
   '-site:redboxsoft.com',
+  '-site:stackexchange.com',
+  '-site:russkiypro.com',
   '-site:ru.wiktionary.org',
   '-site:*.wikipedia.org/*hl=ru*',
   '-site:*.wikipedia.org/*lang=ru*'
@@ -19,7 +22,6 @@ const defaultFilters = [
   chrome.storage.local.get(["filterEnabled", "customBlacklist"], (data) => {
 
     const isEnabled = data.filterEnabled ?? true;
-    console.log("✅ filterEnabled:", isEnabled);
     if (!isEnabled) return;
 
     chrome.storage.local.get(["_initialized"], (initData) => {
@@ -28,13 +30,10 @@ const defaultFilters = [
           customBlacklist: defaultFilters,
           _initialized: true
         });
-        console.log("✅ Initialized with defaultFilters:", defaultFilters);
       }
     });
 
     const blacklistTerms = data.customBlacklist;
-    console.log("📎 Filters being applied:", blacklistTerms);
-
     const engine = window.location.hostname;
 
     function alreadyFiltered(query) {
@@ -50,8 +49,6 @@ const defaultFilters = [
       const q = url.searchParams.get(param);
 
       if (q && !alreadyFiltered(q)) {
-        console.log("🔍 Original query:", q);
-        console.log("🔧 Modified query:", appendFilters(q));
         url.searchParams.set(param, appendFilters(q));
         window.location.href = url.toString();
       }

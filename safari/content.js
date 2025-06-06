@@ -1,5 +1,5 @@
-// Chrome
-const defaultFilters = [
+// Safari
+const initialDefaults = [
   '-lang:ru',
   '-site:ru',
   '-site:*.ru',
@@ -18,10 +18,8 @@ const defaultFilters = [
   '-site:*.wikipedia.org/*lang=ru*'
 ];
 
-
 (function () {
   chrome.storage.local.get(["filterEnabled", "customBlacklist"], (data) => {
-
     const isEnabled = data.filterEnabled ?? true;
     if (!isEnabled) return;
 
@@ -31,6 +29,7 @@ const defaultFilters = [
           customBlacklist: defaultFilters,
           _initialized: true
         });
+        data.customBlacklist = defaultFilters;
       }
     });
 
@@ -38,11 +37,11 @@ const defaultFilters = [
     const engine = window.location.hostname;
 
     function alreadyFiltered(query) {
-      return blacklistTerms.every(term => query.includes(term));
+      return blacklistTerms && blacklistTerms.every(term => query.includes(term));
     }
 
     function appendFilters(query) {
-      return query + ' ' + blacklistTerms.join(' ');
+      return query + ' ' + (blacklistTerms ? blacklistTerms.join(' ') : '');
     }
 
     function updateQueryParam(param) {
